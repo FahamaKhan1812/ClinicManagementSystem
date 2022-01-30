@@ -1,0 +1,114 @@
+﻿@model IEnumerable<CMS.Models.Appointment>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="d-grid gap-2 d-md-flex justify-content-md-end">
+    <a asp-action="Create" class="btn btn-success  me-2 mb-2">Create New</a>
+</div>
+
+
+
+<table class="table table-hover table-bordered">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.DoctorID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PatientID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Date)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Appointment_Status)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BillAmount)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BillStatus)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DoctorNotification)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PatientNotification)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FeedbackStatus)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Disease)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Progress)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Prescription)
+            </th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.DoctorID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PatientID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Date)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Appointment_Status)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BillAmount)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BillStatus)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DoctorNotification)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PatientNotification)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FeedbackStatus)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Disease)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Progress)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Prescription)
+            </td>
+            <td>
+                <!-- Details-->
+                <a asp-action="Details" asp-route-id="@item.AppointID"  class="btn btn-sm btn-outline-secondary">
+                    Detail
+                </a>
+
+                <!-- Edit-->
+                <a asp-action="Edit" asp-route-id="@item.AppointID" class="btn btn-sm btn-outline-warning">
+                    Edit
+                </a>
+               
+                <!-- Delete-->
+                <a asp-action="Delete" asp-route-id="@item.AppointID" class="btn btn-sm btn-outline-danger">
+                    Delete
+                </a>
+
+
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

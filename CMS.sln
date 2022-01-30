@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CMS", "CMS\CMS.csproj", "{00D26057-61ED-4D0A-AA57-E610005D3DC1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{00D26057-61ED-4D0A-AA57-E610005D3DC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00D26057-61ED-4D0A-AA57-E610005D3DC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00D26057-61ED-4D0A-AA57-E610005D3DC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00D26057-61ED-4D0A-AA57-E610005D3DC1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0F0D64BD-1BD7-4213-9E5E-D288FD4939BC}
+	EndGlobalSection
+EndGlobal
